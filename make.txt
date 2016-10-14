@@ -1,0 +1,76 @@
+# Makefile for UNIX 
+
+# the compiler: gcc for C program, define as g++ for C++ 
+CC = gcc 
+
+# the static library archiver 
+AR = ar rcs 
+
+# compiler flags: 
+# -g enable debugging 
+# -Wall turn on all warnings 
+# -D__USE_FIXED_PROTOTYPES__ force the compiler to use the correct headers
+# -ansi don’t use GNU extensions, stick to ANSI 
+# -std=c99 use newer version 
+CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
+
+# libraries 
+# custom 
+COMMON_FUNCTIONS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/common/libcommon_functions.a
+COLLECTIONS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/libcollections.a
+COMPARERS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/libcomparers.a
+UNIT_TESTS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/libunit_tests.a
+
+# the build target executable: 
+TARGET = concurrency
+LIBRARY = libconcurrency.a
+
+# source files 
+SOURCE_FILES = time.o fifo_queue.o task_queue.o thread_pool.o generic_runner.o generic_thread.o generic_threads_manager.o
+
+# test source files 
+TEST_SOURCE_FILES = test_fifo_queue.o test_task_queue.o test_thread_pool.o test_threads_manager.o
+
+all: $(TARGET)
+
+$(TARGET): main.c $(LIBRARY) $(TEST_SOURCE_FILES)
+	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(COMMON_FUNCTIONS_LIBRARY) $(COLLECTIONS_LIBRARY) $(COMPARERS_LIBRARY) $(TEST_SOURCE_FILES) $(UNIT_TESTS_LIBRARY)
+
+$(LIBRARY): $(SOURCE_FILES)
+	$(AR) $(LIBRARY) $(SOURCE_FILES) 
+
+time.o: common/time.c common/time.h 
+	$(CC) $(CFLAGS) -c common/time.c
+
+fifo_queue.o: common/fifo_queue.c common/fifo_queue.h 
+	$(CC) $(CFLAGS) -c common/fifo_queue.c
+
+task_queue.o: threads/thread_pool/task_queue.c threads/thread_pool/task_queue.h
+	$(CC) $(CFLAGS) -c threads/thread_pool/task_queue.c
+
+thread_pool.o: threads/thread_pool/thread_pool.c threads/thread_pool/thread_pool.h
+	$(CC) $(CFLAGS) -c threads/thread_pool/thread_pool.c
+
+generic_runner.o: threads/generic_runner.c threads/generic_runner.h 
+	$(CC) $(CFLAGS) -c threads/generic_runner.c
+
+generic_thread.o: threads/generic_thread.c threads/generic_thread.h 
+	$(CC) $(CFLAGS) -c threads/generic_thread.c
+
+generic_threads_manager.o: threads/generic_threads_manager.c threads/generic_threads_manager.h 
+	$(CC) $(CFLAGS) -c threads/generic_threads_manager.c
+
+test_fifo_queue.o: test/test_fifo_queue.c test/test_fifo_queue.h 
+	$(CC) $(CFLAGS) -c test/test_fifo_queue.c
+
+test_task_queue.o: test/test_task_queue.c test/test_task_queue.h 
+	$(CC) $(CFLAGS) -c test/test_task_queue.c
+
+test_thread_pool.o: test/test_thread_pool.c test/test_thread_pool.h
+	$(CC) $(CFLAGS) -c test/test_thread_pool.c
+
+test_threads_manager.o: test/test_threads_manager.c test/test_threads_manager.h
+	$(CC) $(CFLAGS) -c test/test_threads_manager.c
+
+clean: 
+	$(RM) $(TARGET) $(LIBRARY) $(SOURCE_FILES) $(TEST_SOURCE_FILES)
