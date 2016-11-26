@@ -2,7 +2,7 @@
 // Created by Michal Ziobro on 08/08/2016.
 //
 
-#include <ntsid.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
 #include <errno.h>

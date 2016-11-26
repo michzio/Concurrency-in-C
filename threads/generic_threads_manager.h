@@ -5,7 +5,7 @@
 #ifndef CONCURRENCY_THREADS_GENERIC_THREADS_MANAGER_H
 #define CONCURRENCY_THREADS_GENERIC_THREADS_MANAGER_H
 
-#include <ntsid.h>
+#include <stdio.h>
 #include "../../common/types.h"
 #include "generic_runner.h"
 

@@ -220,7 +220,7 @@ void task_fill(task_t *task, runner_t runner, runner_attr_t runner_attr, runner_
 void task_run(task_t *task) {
 
     if(!task) {
-        fprintf(stderr, "%s: Error: passed empty task to task runnner!\n");
+        fprintf(stderr, "%s: Error: passed empty task to task runnner!\n", __func__);
         return;
     }
     task->runner_res = task->runner(task->runner_attr);
