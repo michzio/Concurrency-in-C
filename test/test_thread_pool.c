@@ -6,10 +6,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <pthread.h>
-#include "../../concurrency/threads/thread_pool/thread_pool.h"
 #include "test_thread_pool.h"
-#include "../../unit_tests/test/assertion.h"
+#include "../../concurrency/threads/thread_pool/thread_pool.h"
 #include "../../common/numbers.h"
+#include "../../unit_tests/test/assertion.h"
+#include "../../unit_tests/common/terminal.h"
 
 #define DEFAULT_MIN_SIZE 8
 #define DEFAULT_MAX_SIZE 16
@@ -70,10 +71,10 @@ static void test_clean(void) {
 // tests
 static void test_thread_pool_execute(void) {
 
+    TEST_FUNCTION_HEADER;
+
     int sleep_timeout;
     sleep_timeout = range_rand(0, DEFAULT_MIN_SIZE);
-
-    printf("%s: \n", __func__);
 
     test_create();
 
@@ -104,10 +105,10 @@ static void test_thread_pool_execute(void) {
 
 static void test_thread_pool_run(void) {
 
+    TEST_FUNCTION_HEADER;
+
     int sleep_timeout;
     sleep_timeout = range_rand(0, DEFAULT_MIN_SIZE);
-
-    printf("%s: \n", __func__);
 
     test_create();
 
@@ -135,9 +136,9 @@ static void test_thread_pool_run(void) {
 
 static void test_thread_pool_adjust_size(void) {
 
-    int workers_count = 0;
+    TEST_FUNCTION_HEADER;
 
-    printf("%s: \n", __func__);
+    int workers_count = 0;
 
     test_create();
 
@@ -166,9 +167,9 @@ static void test_thread_pool_adjust_size(void) {
 
 static void test_thread_pool_workers_self_termination(void) {
 
-    int workers_count = 0;
+    TEST_FUNCTION_HEADER;
 
-    printf("%s: \n", __func__);
+    int workers_count = 0;
 
     // create more workers than needed to execute all tasks
     test_create();
@@ -196,14 +197,14 @@ static void test_thread_pool_workers_self_termination(void) {
 
 static void test_thread_pool_pause_and_resume(void) {
 
+    TEST_FUNCTION_HEADER;
+
     int after_pause_count;
     int after_pause_sum;
     int before_resume_one_count;
     int before_resume_one_sum;
     int before_resume_count;
     int before_resume_sum;
-
-    printf("%s: \n", __func__);
 
     test_create();
 
@@ -256,10 +257,10 @@ static void test_thread_pool_pause_and_resume(void) {
 
 void test_thread_pool_set_timeout(void) {
 
+    TEST_FUNCTION_HEADER;
+
     int workers_count = 0;
     int old_workers_count = 0;
-
-    printf("%s: \n", __func__);
 
     test_create();
 
@@ -309,6 +310,8 @@ void test_thread_pool_set_timeout(void) {
 
 static void test_thread_pool_workers_count(void) {
 
+    TEST_FUNCTION_HEADER;
+
     int workers_count = 0;
 
     test_create();
@@ -330,6 +333,8 @@ static void test_thread_pool_workers_count(void) {
 
 static void test_thread_pool_workers_timeout(void) {
 
+    TEST_FUNCTION_HEADER;
+
     int workers_timeout = -1;
 
     test_create();
@@ -349,6 +354,9 @@ static void test_thread_pool_workers_timeout(void) {
 }
 
 static void test_thread_pool_shutdown(void) {
+
+    TEST_FUNCTION_HEADER;
+
     test_create();
 
     for(int i=0; i<DEFAULT_MIN_SIZE; i++) {
@@ -372,6 +380,9 @@ static void test_thread_pool_shutdown(void) {
 }
 
 static void test_thread_pool_force_free(void) {
+
+    TEST_FUNCTION_HEADER;
+
     test_create();
 
     for(int i=0; i<DEFAULT_MIN_SIZE; i++) {

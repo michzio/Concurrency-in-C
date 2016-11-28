@@ -9,9 +9,10 @@
 #include <sys/time.h>
 #include "test_threads_manager.h"
 #include "../../concurrency/threads/generic_threads_manager.h"
-#include "../../unit_tests/test/assertion.h"
 #include "../../common/array_helper.h"
 #include "../common/time.h"
+#include "../../unit_tests/test/assertion.h"
+#include "../../unit_tests/common/terminal.h"
 
 #define JOB_DURATION 5
 #define MAX_LIMIT_OF_MANAGED_THREADS 5
@@ -42,12 +43,12 @@ static void test_clean(void) {
 
 static void test_threads_manager_count(void) {
 
+    TEST_FUNCTION_HEADER;
+
     pthread_t *threads;
     size_t threads_count;
 
     test_create();
-
-    printf("%s: \n", __func__);
 
     // create managed threads
     for (int i = 0; i < MAX_LIMIT_OF_MANAGED_THREADS; i++) {
@@ -80,13 +81,13 @@ static void test_threads_manager_count(void) {
 
 static void test_wait_for_thread(void) {
 
+    TEST_FUNCTION_HEADER;
+
     struct timeval time_0, time_1, time_2;
     int i, *runner_num;
     int diff_time_1, diff_time_2;
 
     test_create();
-
-    printf("%s: \n", __func__);
 
     gettimeofday(&time_0, NULL);
 
@@ -119,6 +120,8 @@ static void test_wait_for_thread(void) {
 
 static void test_timed_wait_for_thread(void) {
 
+    TEST_FUNCTION_HEADER;
+
     struct timeval time_0, time_1, time_2;
     int i, *runner_num;
     int diff_time_1, diff_time_2;
@@ -126,8 +129,6 @@ static void test_timed_wait_for_thread(void) {
     size_t threads_count;
 
     test_create();
-
-    printf("%s: \n", __func__);
 
     gettimeofday(&time_0, NULL);
     threads = threads_manager_threads(threads_manager);

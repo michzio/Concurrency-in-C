@@ -7,8 +7,9 @@
 #include <stdio.h>
 #include "test_task_queue.h"
 #include "../../concurrency/threads/thread_pool/task_queue.h"
-#include "../../unit_tests/test/assertion.h"
 #include "../../common/numbers.h"
+#include "../../unit_tests/test/assertion.h"
+#include "../../unit_tests/common/terminal.h"
 
 #define NUM_WORKERS 10
 
@@ -82,6 +83,9 @@ static void *test_dequeue(void *arg) {
 }
 
 static void run_tests(void) {
+
+    TITLE_HEADER("test_task_queue");
+
     test_create(); // create task_queue
 
     printf("test_task_queue:\n");

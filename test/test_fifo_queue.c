@@ -8,6 +8,7 @@
 #include <string.h>
 #include "../common/fifo_queue.h"
 #include "test_fifo_queue.h"
+#include "../../unit_tests/common/terminal.h"
 
 static fifo_queue_t *fifo;
 
@@ -33,6 +34,9 @@ static void test_clean_with_allocator(void) {
 }
 
 static void test_enqueue_and_dequeue(void) {
+
+    TEST_FUNCTION_HEADER;
+
     test_create();
 
     printf("%s:\n", __func__);
@@ -68,6 +72,9 @@ static void test_enqueue_and_dequeue(void) {
 }
 
 static void test_enqueue_and_dequeue_with_allocator(void) {
+
+    TEST_FUNCTION_HEADER;
+
     test_create_with_allocator();
 
     printf("%s:\n", __func__);
