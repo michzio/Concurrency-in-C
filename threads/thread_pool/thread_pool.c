@@ -13,6 +13,7 @@
 #include "../../../config.h"
 #include "../../../collections/linked_list/doubly_linked_list.h"
 #include "../../../common/numbers.h"
+#include "../../../comparers/comparer.h"
 
 const size_t default_pool_size = 8;        // default num of workers if not specified by user
 const size_t default_max_pool_size = 16;    // max num of workers if not specified by user
