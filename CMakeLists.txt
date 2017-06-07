@@ -33,7 +33,7 @@ else()
 endif()
 
 add_library(Concurrency_Lib SHARED ${SOURCE_FILES})
-set_target_properties(Concurrency_Lib PROPERTIES OUTPUT_NAME concurrency_shared)
+set_target_properties(Concurrency_Lib PROPERTIES OUTPUT_NAME concurrency)
 target_link_libraries(Concurrency_Lib ${COMMON_FUNCTIONS_LIB_PATH})
 target_link_libraries(Concurrency_Lib ${COLLECTIONS_LIB_PATH})
 target_link_libraries(Concurrency_Lib ${COMPARERS_LIB_PATH})

@@ -1,0 +1,3 @@
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/output/unix/bin/concurrency
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/output/unix/lib/libconcurrency.dylib
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/output/unix/lib/static/libconcurrency.a
