@@ -208,7 +208,15 @@ result_t timed_wait_for_thread(threads_manager_t *threads_manager, const int ms_
 
 void threads_manager_free(threads_manager_t *threads_manager) {
 
+    pthread_mutex_lock(&threads_manager->mutex);
+
+    while(threads_manager->count > 0)
+        pthread_cond_wait(&threads_manager->conditional_variable, &threads_manager->mutex);
+
     free(threads_manager->threads);
+
+    pthread_mutex_unlock(&threads_manager->mutex);
+
     pthread_mutex_destroy(&threads_manager->mutex);
     pthread_cond_destroy(&threads_manager->conditional_variable);
     free(threads_manager);
