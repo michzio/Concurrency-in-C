@@ -6,10 +6,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "test_task_queue.h"
-#include "../../concurrency/threads/thread_pool/task_queue.h"
-#include "../../common/numbers.h"
-#include "../../unit_tests/test/assertion.h"
-#include "../../unit_tests/common/terminal.h"
+#include "threads/thread_pool/task_queue.h"
+#include "numbers.h"
+#include "test/assertion.h"
+#include "common/terminal.h"
 
 #define NUM_WORKERS 10
 

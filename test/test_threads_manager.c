@@ -8,11 +8,11 @@
 #include <unistd.h>
 #include <sys/time.h>
 #include "test_threads_manager.h"
-#include "../../concurrency/threads/generic_threads_manager.h"
-#include "../../common/array_helper.h"
-#include "../common/time.h"
-#include "../../unit_tests/test/assertion.h"
-#include "../../unit_tests/common/terminal.h"
+#include "threads/generic_threads_manager.h"
+#include "array_helper.h"
+#include "common/time.h"
+#include "test/assertion.h"
+#include "common/terminal.h"
 
 #define JOB_DURATION 5
 #define MAX_LIMIT_OF_MANAGED_THREADS 5

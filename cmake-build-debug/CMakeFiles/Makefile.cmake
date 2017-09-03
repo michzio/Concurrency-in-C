@@ -29,6 +29,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.7/Modules/Platform/Darwin.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.7/Modules/Platform/UnixPaths.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.7/Modules/ProcessorCount.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/CMakeLists.txt"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/CMakeLists.txt"
   "../CMakeLists.txt"
   "CMakeFiles/3.7.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.7.2/CMakeCXXCompiler.cmake"
@@ -44,12 +46,19 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Concurrency_Lib.dir/DependInfo.cmake"
-  "CMakeFiles/Install_Concurrency.dir/DependInfo.cmake"
   "CMakeFiles/Concurrency.dir/DependInfo.cmake"
   "CMakeFiles/Concurrency_Lib_Static.dir/DependInfo.cmake"
+  "CMakeFiles/Concurrency_Lib.dir/DependInfo.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/CMakeFiles/Collections.dir/DependInfo.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/CMakeFiles/Collections_Lib_Static.dir/DependInfo.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/CMakeFiles/Collections_Lib.dir/DependInfo.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers.dir/DependInfo.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers_Lib_Static.dir/DependInfo.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers_Lib.dir/DependInfo.cmake"
   )

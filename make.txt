@@ -16,20 +16,23 @@ CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
 
 # libraries 
 # custom
-COMMON_FUNCTIONS_INCL_DIR = ../common
-COLLECTIONS_INCL_DIR = ../collections
-COMPARERS_INCL_DIR = ../comparers
-UNIT_TESTS_INCL_DIR = ../unit_tests
- 
-COMMON_FUNCTIONS_LIBRARY = $(COMMON_FUNCTIONS_INCL_DIR)/output/debug/lib/static/libcommon_functions.a
-COLLECTIONS_LIBRARY = $(COLLECTIONS_INCL_DIR)/output/debug/lib/static/libcollections.a
-COMPARERS_LIBRARY = $(COMPARERS_INCL_DIR)/output/debug/lib/static/libcomparers.a
-UNIT_TESTS_LIBRARY = $(UNIT_TESTS_INCL_DIR)/output/debug/lib/static/libunit_tests.a
+COMMON_FUNCTIONS_LIB_DIR=../common/outputs/debug/lib
+COMMON_FUNCTIONS_STATIC_LIB_PATH=$(COMMON_FUNCTIONS_LIB_DIR)/libcommon_functions.a
+COMPARERS_LIB_DIR=../comparers/outputs/debug/lib
+COMPARERS_STATIC_LIB_PATH=$(COMPARERS_LIB_DIR)/libcomparers.a
+COLLECTIONS_LIB_DIR=../collections/outputs/debug/lib
+COLLECTIONS_STATIC_LIB_PATH=$(COLLECTIONS_LIB_DIR)/libcollections.a
+# executable's libraries
+UNIT_TESTS_STATIC_LIB_PATH=../unit_tests/outputs/debug/lib/libunit_tests.a
+
+# include directories
+INCLUDE_DIRS= ./include ../common/include ../common/libraries ../comparers/include ../collections/include ../unit_tests/include
+CFLAGS+= $(foreach d, $(INCLUDE_DIRS), -I$d)
 
 # the build target executable: 
 TARGET = concurrency
 LIBRARY = libconcurrency.a
-SHARED_LIBRARY = lib concurrency.so
+SHARED_LIBRARY = libconcurrency.so
 
 # on macOS build .dylib shared library
 UNAME_S := $(shell uname -s)
@@ -45,63 +48,67 @@ SOURCE_FILES = time.o fifo_queue.o task_queue.o thread_pool.o generic_runner.o g
 # test source files 
 TEST_SOURCE_FILES = test_fifo_queue.o test_task_queue.o test_thread_pool.o test_threads_manager.o
 
-# output directories 
-OUTPUT_DIR = output/debug
-OUTPUT_LIB_DIR = $(OUTPUT_DIR)/lib
-OUTPUT_STATIC_LIB_DIR = $(OUTPUT_LIB_DIR)/static
-OUTPUT_BIN_DIR = $(OUTPUT_DIR)/bin
-OUTPUT_TEST_DIR = $(OUTPUT_DIR)/test
+# outputs directories
+OUTPUTS_DIR = outputs/debug
+OUTPUTS_LIB_DIR = $(OUTPUTS_DIR)/lib
+OUTPUTS_BIN_DIR = $(OUTPUTS_DIR)/bin
+OUTPUTS_TEST_DIR = $(OUTPUTS_DIR)/test
 
 all: directories libraries $(TARGET)
 
-# make output directories
+# make outputs directories
 directories: 
-	@mkdir -p $(OUTPUT_DIR)
-	@mkdir -p $(OUTPUT_LIB_DIR)
-	@mkdir -p $(OUTPUT_STATIC_LIB_DIR)
-	@mkdir -p $(OUTPUT_BIN_DIR)
-	@mkdir -p $(OUTPUT_TEST_DIR)
+	@mkdir -p $(OUTPUTS_DIR)
+	@mkdir -p $(OUTPUTS_LIB_DIR)
+	@mkdir -p $(OUTPUTS_BIN_DIR)
+	@mkdir -p $(OUTPUTS_TEST_DIR)
 
-libraries: $(LIBRARY)
+libraries: $(LIBRARY) $(SHARED_LIBRARY) $(DYNAMIC_LIBRARY)
 
 $(TARGET): $(LIBRARY) $(TEST_SOURCE_FILES)
-	$(CC) $(CFLAGS) -o $(OUTPUT_BIN_DIR)/$(TARGET) main.c $(OUTPUT_TEST_DIR)/*.o $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(COMMON_FUNCTIONS_LIBRARY) $(COLLECTIONS_LIBRARY) $(COMPARERS_LIBRARY) $(UNIT_TESTS_LIBRARY)
+	$(CC) $(CFLAGS) -o $(OUTPUTS_BIN_DIR)/$(TARGET) src/main.c $(OUTPUTS_TEST_DIR)/*.o $(OUTPUTS_LIB_DIR)/$(LIBRARY) $(COMMON_FUNCTIONS_STATIC_LIB_PATH) $(COMPARERS_STATIC_LIB_PATH) $(COLLECTIONS_STATIC_LIB_PATH) $(UNIT_TESTS_STATIC_LIB_PATH)
+
+$(SHARED_LIBRARY): $(SOURCE_FILES)
+	$(CC) $(CFLAGS) -L$(COMMON_FUNCTIONS_LIB_DIR) -L$(COMPARERS_LIB_DIR) -L$(COLLECTIONS_LIB_DIR) -shared -o $(OUTPUTS_LIB_DIR)/$(SHARED_LIBRARY) $(OUTPUTS_DIR)/*.o -lcommon_functions -lcomparers -lcollections
+
+$(DYNAMIC_LIBRARY): $(SOURCE_FILES)
+	$(CC) $(CFLAGS) -L$(COMMON_FUNCTIONS_LIB_DIR) -L$(COMPARERS_LIB_DIR) -L$(COLLECTIONS_LIB_DIR) -dynamiclib -o $(OUTPUTS_LIB_DIR)/$(DYNAMIC_LIBRARY) $(OUTPUTS_DIR)/*.o -lcommon_functions -lcomparers -lcollections
 
 $(LIBRARY): $(SOURCE_FILES)
-	$(AR) $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OUTPUT_DIR)/*.o 
+	$(AR) $(OUTPUTS_LIB_DIR)/$(LIBRARY) $(OUTPUTS_DIR)/*.o
 
-time.o: common/time.c common/time.h 
-	$(CC) $(CFLAGS) -c common/time.c -o $(OUTPUT_DIR)/time.o
+time.o: src/common/time.c include/common/time.h
+	$(CC) $(CFLAGS) -c src/common/time.c -o $(OUTPUTS_DIR)/time.o
 
-fifo_queue.o: common/fifo_queue.c common/fifo_queue.h 
-	$(CC) $(CFLAGS) -c common/fifo_queue.c -o $(OUTPUT_DIR)/fifo_queue.o
+fifo_queue.o: src/common/fifo_queue.c include/common/fifo_queue.h
+	$(CC) $(CFLAGS) -c src/common/fifo_queue.c -o $(OUTPUTS_DIR)/fifo_queue.o
 
-task_queue.o: threads/thread_pool/task_queue.c threads/thread_pool/task_queue.h
-	$(CC) $(CFLAGS) -c threads/thread_pool/task_queue.c -o $(OUTPUT_DIR)/task_queue.o
+task_queue.o: src/threads/thread_pool/task_queue.c include/threads/thread_pool/task_queue.h
+	$(CC) $(CFLAGS) -c src/threads/thread_pool/task_queue.c -o $(OUTPUTS_DIR)/task_queue.o
 
-thread_pool.o: threads/thread_pool/thread_pool.c threads/thread_pool/thread_pool.h
-	$(CC) $(CFLAGS) -c threads/thread_pool/thread_pool.c -o $(OUTPUT_DIR)/thread_pool.o
+thread_pool.o: src/threads/thread_pool/thread_pool.c include/threads/thread_pool/thread_pool.h
+	$(CC) $(CFLAGS) -c src/threads/thread_pool/thread_pool.c -o $(OUTPUTS_DIR)/thread_pool.o
 
-generic_runner.o: threads/generic_runner.c threads/generic_runner.h 
-	$(CC) $(CFLAGS) -c threads/generic_runner.c -o $(OUTPUT_DIR)/generic_runner.o
+generic_runner.o: src/threads/generic_runner.c include/threads/generic_runner.h
+	$(CC) $(CFLAGS) -c src/threads/generic_runner.c -o $(OUTPUTS_DIR)/generic_runner.o
 
-generic_thread.o: threads/generic_thread.c threads/generic_thread.h 
-	$(CC) $(CFLAGS) -c threads/generic_thread.c -o $(OUTPUT_DIR)/generic_thread.o
+generic_thread.o: src/threads/generic_thread.c include/threads/generic_thread.h
+	$(CC) $(CFLAGS) -c src/threads/generic_thread.c -o $(OUTPUTS_DIR)/generic_thread.o
 
-generic_threads_manager.o: threads/generic_threads_manager.c threads/generic_threads_manager.h 
-	$(CC) $(CFLAGS) -c threads/generic_threads_manager.c -o $(OUTPUT_DIR)/generic_threads_manager.o
+generic_threads_manager.o: src/threads/generic_threads_manager.c include/threads/generic_threads_manager.h
+	$(CC) $(CFLAGS) -c src/threads/generic_threads_manager.c -o $(OUTPUTS_DIR)/generic_threads_manager.o
 
-test_fifo_queue.o: test/test_fifo_queue.c test/test_fifo_queue.h 
-	$(CC) $(CFLAGS) -c test/test_fifo_queue.c -o $(OUTPUT_TEST_DIR)/test_fifo_queue.o
+test_fifo_queue.o: test/test_fifo_queue.c test/test_fifo_queue.h
+	$(CC) $(CFLAGS) -c test/test_fifo_queue.c -o $(OUTPUTS_TEST_DIR)/test_fifo_queue.o
 
 test_task_queue.o: test/test_task_queue.c test/test_task_queue.h 
-	$(CC) $(CFLAGS) -c test/test_task_queue.c -o $(OUTPUT_TEST_DIR)/test_task_queue.o
+	$(CC) $(CFLAGS) -c test/test_task_queue.c -o $(OUTPUTS_TEST_DIR)/test_task_queue.o
 
 test_thread_pool.o: test/test_thread_pool.c test/test_thread_pool.h
-	$(CC) $(CFLAGS) -c test/test_thread_pool.c -o $(OUTPUT_TEST_DIR)/test_thread_pool.o
+	$(CC) $(CFLAGS) -c test/test_thread_pool.c -o $(OUTPUTS_TEST_DIR)/test_thread_pool.o
 
 test_threads_manager.o: test/test_threads_manager.c test/test_threads_manager.h
-	$(CC) $(CFLAGS) -c test/test_threads_manager.c -o $(OUTPUT_TEST_DIR)/test_threads_manager.o
+	$(CC) $(CFLAGS) -c test/test_threads_manager.c -o $(OUTPUTS_TEST_DIR)/test_threads_manager.o
 
 clean: 
-	$(RM) -rf $(OUTPUT_DIR)
+	$(RM) -rf $(OUTPUTS_DIR)

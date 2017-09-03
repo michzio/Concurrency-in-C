@@ -57,212 +57,212 @@ include CMakeFiles/Concurrency_Lib_Static.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Concurrency_Lib_Static.dir/flags.make
 
-CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o: CMakeFiles/Concurrency_Lib_Static.dir/flags.make
-CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o: ../common/fifo_queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/common/fifo_queue.c
+CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o: CMakeFiles/Concurrency_Lib_Static.dir/flags.make
+CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o: ../src/common/fifo_queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/common/fifo_queue.c
 
-CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/common/fifo_queue.c > CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.i
+CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/common/fifo_queue.c > CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.i
 
-CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/common/fifo_queue.c -o CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.s
+CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/common/fifo_queue.c -o CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.s
 
-CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o.requires:
+CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o.requires:
 
-.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o.requires
+.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o.requires
 
-CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o.provides: CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o.requires
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o.provides.build
-.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o.provides
+CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o.provides: CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o.requires
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o.provides.build
+.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o.provides
 
-CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o.provides.build: CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o
-
-
-CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o: CMakeFiles/Concurrency_Lib_Static.dir/flags.make
-CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o: ../common/time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/common/time.c
-
-CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/common/time.c > CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.i
-
-CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/common/time.c -o CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.s
-
-CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o.requires:
-
-.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o.requires
-
-CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o.provides: CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o.requires
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o.provides.build
-.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o.provides
-
-CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o.provides.build: CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o
+CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o.provides.build: CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o
 
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o: CMakeFiles/Concurrency_Lib_Static.dir/flags.make
-CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o: ../threads/thread_pool/task_queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/thread_pool/task_queue.c
+CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o: CMakeFiles/Concurrency_Lib_Static.dir/flags.make
+CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o: ../src/common/time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/common/time.c
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/thread_pool/task_queue.c > CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.i
+CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/common/time.c > CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.i
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/thread_pool/task_queue.c -o CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.s
+CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/common/time.c -o CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.s
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o.requires:
+CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o.requires:
 
-.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o.requires
+.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o.requires
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o.provides: CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o.requires
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o.provides.build
-.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o.provides
+CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o.provides: CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o.requires
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o.provides.build
+.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o.provides
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o.provides.build: CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o
-
-
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o: CMakeFiles/Concurrency_Lib_Static.dir/flags.make
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o: ../threads/generic_runner.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/generic_runner.c
-
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/generic_runner.c > CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.i
-
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/generic_runner.c -o CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.s
-
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o.requires:
-
-.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o.requires
-
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o.provides: CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o.requires
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o.provides.build
-.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o.provides
-
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o.provides.build: CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o
+CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o.provides.build: CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o
 
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o: CMakeFiles/Concurrency_Lib_Static.dir/flags.make
-CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o: ../threads/thread_pool/thread_pool.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/thread_pool/thread_pool.c
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o: CMakeFiles/Concurrency_Lib_Static.dir/flags.make
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o: ../src/threads/thread_pool/task_queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/thread_pool/task_queue.c
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/thread_pool/thread_pool.c > CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.i
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/thread_pool/task_queue.c > CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.i
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/thread_pool/thread_pool.c -o CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.s
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/thread_pool/task_queue.c -o CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.s
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o.requires:
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o.requires:
 
-.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o.requires
+.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o.requires
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o.provides: CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o.requires
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o.provides.build
-.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o.provides
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o.provides: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o.requires
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o.provides.build
+.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o.provides
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o.provides.build: CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o
-
-
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o: CMakeFiles/Concurrency_Lib_Static.dir/flags.make
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o: ../threads/generic_thread.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/generic_thread.c
-
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/generic_thread.c > CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.i
-
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/generic_thread.c -o CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.s
-
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o.requires:
-
-.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o.requires
-
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o.provides: CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o.requires
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o.provides.build
-.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o.provides
-
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o.provides.build: CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o.provides.build: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o
 
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o: CMakeFiles/Concurrency_Lib_Static.dir/flags.make
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o: ../threads/generic_threads_manager.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/generic_threads_manager.c
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o: CMakeFiles/Concurrency_Lib_Static.dir/flags.make
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o: ../src/threads/generic_runner.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/generic_runner.c
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/generic_threads_manager.c > CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.i
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/generic_runner.c > CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.i
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/generic_threads_manager.c -o CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.s
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/generic_runner.c -o CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.s
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o.requires:
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o.requires:
 
-.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o.requires
+.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o.requires
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o.provides: CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o.requires
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o.provides.build
-.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o.provides
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o.provides: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o.requires
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o.provides.build
+.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o.provides
 
-CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o.provides.build: CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o.provides.build: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o
+
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o: CMakeFiles/Concurrency_Lib_Static.dir/flags.make
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o: ../src/threads/thread_pool/thread_pool.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/thread_pool/thread_pool.c
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/thread_pool/thread_pool.c > CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.i
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/thread_pool/thread_pool.c -o CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.s
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o.requires:
+
+.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o.requires
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o.provides: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o.requires
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o.provides.build
+.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o.provides
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o.provides.build: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o
+
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o: CMakeFiles/Concurrency_Lib_Static.dir/flags.make
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o: ../src/threads/generic_thread.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/generic_thread.c
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/generic_thread.c > CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.i
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/generic_thread.c -o CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.s
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o.requires:
+
+.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o.requires
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o.provides: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o.requires
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o.provides.build
+.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o.provides
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o.provides.build: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o
+
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o: CMakeFiles/Concurrency_Lib_Static.dir/flags.make
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o: ../src/threads/generic_threads_manager.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/generic_threads_manager.c
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/generic_threads_manager.c > CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.i
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/threads/generic_threads_manager.c -o CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.s
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o.requires:
+
+.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o.requires
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o.provides: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o.requires
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o.provides.build
+.PHONY : CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o.provides
+
+CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o.provides.build: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o
 
 
 # Object files for target Concurrency_Lib_Static
 Concurrency_Lib_Static_OBJECTS = \
-"CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o" \
-"CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o" \
-"CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o" \
-"CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o" \
-"CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o" \
-"CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o" \
-"CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o"
+"CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o" \
+"CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o" \
+"CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o" \
+"CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o" \
+"CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o" \
+"CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o" \
+"CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o"
 
 # External object files for target Concurrency_Lib_Static
 Concurrency_Lib_Static_EXTERNAL_OBJECTS =
 
-libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o
-libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o
-libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o
-libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o
-libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o
-libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o
-libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o
-libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/build.make
-libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library libconcurrency.a"
+../outputs/lib/apple/libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o
+../outputs/lib/apple/libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o
+../outputs/lib/apple/libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o
+../outputs/lib/apple/libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o
+../outputs/lib/apple/libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o
+../outputs/lib/apple/libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o
+../outputs/lib/apple/libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o
+../outputs/lib/apple/libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/build.make
+../outputs/lib/apple/libconcurrency.a: CMakeFiles/Concurrency_Lib_Static.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library ../outputs/lib/apple/libconcurrency.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Concurrency_Lib_Static.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Concurrency_Lib_Static.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Concurrency_Lib_Static.dir/build: libconcurrency.a
+CMakeFiles/Concurrency_Lib_Static.dir/build: ../outputs/lib/apple/libconcurrency.a
 
 .PHONY : CMakeFiles/Concurrency_Lib_Static.dir/build
 
-CMakeFiles/Concurrency_Lib_Static.dir/requires: CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o.requires
-CMakeFiles/Concurrency_Lib_Static.dir/requires: CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o.requires
-CMakeFiles/Concurrency_Lib_Static.dir/requires: CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o.requires
-CMakeFiles/Concurrency_Lib_Static.dir/requires: CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o.requires
-CMakeFiles/Concurrency_Lib_Static.dir/requires: CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o.requires
-CMakeFiles/Concurrency_Lib_Static.dir/requires: CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o.requires
-CMakeFiles/Concurrency_Lib_Static.dir/requires: CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o.requires
+CMakeFiles/Concurrency_Lib_Static.dir/requires: CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o.requires
+CMakeFiles/Concurrency_Lib_Static.dir/requires: CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o.requires
+CMakeFiles/Concurrency_Lib_Static.dir/requires: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o.requires
+CMakeFiles/Concurrency_Lib_Static.dir/requires: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o.requires
+CMakeFiles/Concurrency_Lib_Static.dir/requires: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o.requires
+CMakeFiles/Concurrency_Lib_Static.dir/requires: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o.requires
+CMakeFiles/Concurrency_Lib_Static.dir/requires: CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o.requires
 
 .PHONY : CMakeFiles/Concurrency_Lib_Static.dir/requires
 

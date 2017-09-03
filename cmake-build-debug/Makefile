@@ -56,50 +56,6 @@ CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurre
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -155,32 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Concurrency_Lib
-
-# Build rule for target.
-Concurrency_Lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Concurrency_Lib
-.PHONY : Concurrency_Lib
-
-# fast build rule for target.
-Concurrency_Lib/fast:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/build
-.PHONY : Concurrency_Lib/fast
-
-#=============================================================================
-# Target rules for targets named Install_Concurrency
-
-# Build rule for target.
-Install_Concurrency: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Install_Concurrency
-.PHONY : Install_Concurrency
-
-# fast build rule for target.
-Install_Concurrency/fast:
-	$(MAKE) -f CMakeFiles/Install_Concurrency.dir/build.make CMakeFiles/Install_Concurrency.dir/build
-.PHONY : Install_Concurrency/fast
-
-#=============================================================================
 # Target rules for targets named Concurrency
 
 # Build rule for target.
@@ -206,92 +136,333 @@ Concurrency_Lib_Static/fast:
 	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/build
 .PHONY : Concurrency_Lib_Static/fast
 
-common/fifo_queue.o: common/fifo_queue.c.o
+#=============================================================================
+# Target rules for targets named Concurrency_Lib
 
-.PHONY : common/fifo_queue.o
+# Build rule for target.
+Concurrency_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Concurrency_Lib
+.PHONY : Concurrency_Lib
+
+# fast build rule for target.
+Concurrency_Lib/fast:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/build
+.PHONY : Concurrency_Lib/fast
+
+#=============================================================================
+# Target rules for targets named Collections
+
+# Build rule for target.
+Collections: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Collections
+.PHONY : Collections
+
+# fast build rule for target.
+Collections/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/CMakeFiles/Collections.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/CMakeFiles/Collections.dir/build
+.PHONY : Collections/fast
+
+#=============================================================================
+# Target rules for targets named Collections_Lib_Static
+
+# Build rule for target.
+Collections_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Collections_Lib_Static
+.PHONY : Collections_Lib_Static
+
+# fast build rule for target.
+Collections_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/CMakeFiles/Collections_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/CMakeFiles/Collections_Lib_Static.dir/build
+.PHONY : Collections_Lib_Static/fast
+
+#=============================================================================
+# Target rules for targets named Collections_Lib
+
+# Build rule for target.
+Collections_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Collections_Lib
+.PHONY : Collections_Lib
+
+# fast build rule for target.
+Collections_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/CMakeFiles/Collections_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/CMakeFiles/Collections_Lib.dir/build
+.PHONY : Collections_Lib/fast
+
+#=============================================================================
+# Target rules for targets named Comparers
+
+# Build rule for target.
+Comparers: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Comparers
+.PHONY : Comparers
+
+# fast build rule for target.
+Comparers/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers.dir/build
+.PHONY : Comparers/fast
+
+#=============================================================================
+# Target rules for targets named Comparers_Lib_Static
+
+# Build rule for target.
+Comparers_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Comparers_Lib_Static
+.PHONY : Comparers_Lib_Static
+
+# fast build rule for target.
+Comparers_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers_Lib_Static.dir/build
+.PHONY : Comparers_Lib_Static/fast
+
+#=============================================================================
+# Target rules for targets named Comparers_Lib
+
+# Build rule for target.
+Comparers_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Comparers_Lib
+.PHONY : Comparers_Lib
+
+# fast build rule for target.
+Comparers_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers_Lib.dir/build
+.PHONY : Comparers_Lib/fast
+
+src/common/fifo_queue.o: src/common/fifo_queue.c.o
+
+.PHONY : src/common/fifo_queue.o
 
 # target to build an object file
-common/fifo_queue.c.o:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/common/fifo_queue.c.o
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.o
-.PHONY : common/fifo_queue.c.o
+src/common/fifo_queue.c.o:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.o
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/common/fifo_queue.c.o
+.PHONY : src/common/fifo_queue.c.o
 
-common/fifo_queue.i: common/fifo_queue.c.i
+src/common/fifo_queue.i: src/common/fifo_queue.c.i
 
-.PHONY : common/fifo_queue.i
+.PHONY : src/common/fifo_queue.i
 
 # target to preprocess a source file
-common/fifo_queue.c.i:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/common/fifo_queue.c.i
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.i
-.PHONY : common/fifo_queue.c.i
+src/common/fifo_queue.c.i:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.i
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/common/fifo_queue.c.i
+.PHONY : src/common/fifo_queue.c.i
 
-common/fifo_queue.s: common/fifo_queue.c.s
+src/common/fifo_queue.s: src/common/fifo_queue.c.s
 
-.PHONY : common/fifo_queue.s
+.PHONY : src/common/fifo_queue.s
 
 # target to generate assembly for a file
-common/fifo_queue.c.s:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/common/fifo_queue.c.s
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/common/fifo_queue.c.s
-.PHONY : common/fifo_queue.c.s
+src/common/fifo_queue.c.s:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/common/fifo_queue.c.s
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/common/fifo_queue.c.s
+.PHONY : src/common/fifo_queue.c.s
 
-common/time.o: common/time.c.o
+src/common/time.o: src/common/time.c.o
 
-.PHONY : common/time.o
+.PHONY : src/common/time.o
 
 # target to build an object file
-common/time.c.o:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/common/time.c.o
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.o
-.PHONY : common/time.c.o
+src/common/time.c.o:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.o
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/common/time.c.o
+.PHONY : src/common/time.c.o
 
-common/time.i: common/time.c.i
+src/common/time.i: src/common/time.c.i
 
-.PHONY : common/time.i
+.PHONY : src/common/time.i
 
 # target to preprocess a source file
-common/time.c.i:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/common/time.c.i
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.i
-.PHONY : common/time.c.i
+src/common/time.c.i:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.i
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/common/time.c.i
+.PHONY : src/common/time.c.i
 
-common/time.s: common/time.c.s
+src/common/time.s: src/common/time.c.s
 
-.PHONY : common/time.s
+.PHONY : src/common/time.s
 
 # target to generate assembly for a file
-common/time.c.s:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/common/time.c.s
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/common/time.c.s
-.PHONY : common/time.c.s
+src/common/time.c.s:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/common/time.c.s
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/common/time.c.s
+.PHONY : src/common/time.c.s
 
-main.o: main.c.o
+src/main.o: src/main.c.o
 
-.PHONY : main.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/Concurrency.dir/build.make CMakeFiles/Concurrency.dir/main.c.o
-.PHONY : main.c.o
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/Concurrency.dir/build.make CMakeFiles/Concurrency.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-main.i: main.c.i
+src/main.i: src/main.c.i
 
-.PHONY : main.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Concurrency.dir/build.make CMakeFiles/Concurrency.dir/main.c.i
-.PHONY : main.c.i
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/Concurrency.dir/build.make CMakeFiles/Concurrency.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-main.s: main.c.s
+src/main.s: src/main.c.s
 
-.PHONY : main.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Concurrency.dir/build.make CMakeFiles/Concurrency.dir/main.c.s
-.PHONY : main.c.s
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/Concurrency.dir/build.make CMakeFiles/Concurrency.dir/src/main.c.s
+.PHONY : src/main.c.s
+
+src/threads/generic_runner.o: src/threads/generic_runner.c.o
+
+.PHONY : src/threads/generic_runner.o
+
+# target to build an object file
+src/threads/generic_runner.c.o:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.o
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/generic_runner.c.o
+.PHONY : src/threads/generic_runner.c.o
+
+src/threads/generic_runner.i: src/threads/generic_runner.c.i
+
+.PHONY : src/threads/generic_runner.i
+
+# target to preprocess a source file
+src/threads/generic_runner.c.i:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.i
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/generic_runner.c.i
+.PHONY : src/threads/generic_runner.c.i
+
+src/threads/generic_runner.s: src/threads/generic_runner.c.s
+
+.PHONY : src/threads/generic_runner.s
+
+# target to generate assembly for a file
+src/threads/generic_runner.c.s:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_runner.c.s
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/generic_runner.c.s
+.PHONY : src/threads/generic_runner.c.s
+
+src/threads/generic_thread.o: src/threads/generic_thread.c.o
+
+.PHONY : src/threads/generic_thread.o
+
+# target to build an object file
+src/threads/generic_thread.c.o:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.o
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/generic_thread.c.o
+.PHONY : src/threads/generic_thread.c.o
+
+src/threads/generic_thread.i: src/threads/generic_thread.c.i
+
+.PHONY : src/threads/generic_thread.i
+
+# target to preprocess a source file
+src/threads/generic_thread.c.i:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.i
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/generic_thread.c.i
+.PHONY : src/threads/generic_thread.c.i
+
+src/threads/generic_thread.s: src/threads/generic_thread.c.s
+
+.PHONY : src/threads/generic_thread.s
+
+# target to generate assembly for a file
+src/threads/generic_thread.c.s:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_thread.c.s
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/generic_thread.c.s
+.PHONY : src/threads/generic_thread.c.s
+
+src/threads/generic_threads_manager.o: src/threads/generic_threads_manager.c.o
+
+.PHONY : src/threads/generic_threads_manager.o
+
+# target to build an object file
+src/threads/generic_threads_manager.c.o:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.o
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/generic_threads_manager.c.o
+.PHONY : src/threads/generic_threads_manager.c.o
+
+src/threads/generic_threads_manager.i: src/threads/generic_threads_manager.c.i
+
+.PHONY : src/threads/generic_threads_manager.i
+
+# target to preprocess a source file
+src/threads/generic_threads_manager.c.i:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.i
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/generic_threads_manager.c.i
+.PHONY : src/threads/generic_threads_manager.c.i
+
+src/threads/generic_threads_manager.s: src/threads/generic_threads_manager.c.s
+
+.PHONY : src/threads/generic_threads_manager.s
+
+# target to generate assembly for a file
+src/threads/generic_threads_manager.c.s:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/generic_threads_manager.c.s
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/generic_threads_manager.c.s
+.PHONY : src/threads/generic_threads_manager.c.s
+
+src/threads/thread_pool/task_queue.o: src/threads/thread_pool/task_queue.c.o
+
+.PHONY : src/threads/thread_pool/task_queue.o
+
+# target to build an object file
+src/threads/thread_pool/task_queue.c.o:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.o
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/thread_pool/task_queue.c.o
+.PHONY : src/threads/thread_pool/task_queue.c.o
+
+src/threads/thread_pool/task_queue.i: src/threads/thread_pool/task_queue.c.i
+
+.PHONY : src/threads/thread_pool/task_queue.i
+
+# target to preprocess a source file
+src/threads/thread_pool/task_queue.c.i:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.i
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/thread_pool/task_queue.c.i
+.PHONY : src/threads/thread_pool/task_queue.c.i
+
+src/threads/thread_pool/task_queue.s: src/threads/thread_pool/task_queue.c.s
+
+.PHONY : src/threads/thread_pool/task_queue.s
+
+# target to generate assembly for a file
+src/threads/thread_pool/task_queue.c.s:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/task_queue.c.s
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/thread_pool/task_queue.c.s
+.PHONY : src/threads/thread_pool/task_queue.c.s
+
+src/threads/thread_pool/thread_pool.o: src/threads/thread_pool/thread_pool.c.o
+
+.PHONY : src/threads/thread_pool/thread_pool.o
+
+# target to build an object file
+src/threads/thread_pool/thread_pool.c.o:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.o
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/thread_pool/thread_pool.c.o
+.PHONY : src/threads/thread_pool/thread_pool.c.o
+
+src/threads/thread_pool/thread_pool.i: src/threads/thread_pool/thread_pool.c.i
+
+.PHONY : src/threads/thread_pool/thread_pool.i
+
+# target to preprocess a source file
+src/threads/thread_pool/thread_pool.c.i:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.i
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/thread_pool/thread_pool.c.i
+.PHONY : src/threads/thread_pool/thread_pool.c.i
+
+src/threads/thread_pool/thread_pool.s: src/threads/thread_pool/thread_pool.c.s
+
+.PHONY : src/threads/thread_pool/thread_pool.s
+
+# target to generate assembly for a file
+src/threads/thread_pool/thread_pool.c.s:
+	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/src/threads/thread_pool/thread_pool.c.s
+	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/src/threads/thread_pool/thread_pool.c.s
+.PHONY : src/threads/thread_pool/thread_pool.c.s
 
 test/test_fifo_queue.o: test/test_fifo_queue.c.o
 
@@ -401,181 +572,47 @@ test/test_threads_manager.c.s:
 	$(MAKE) -f CMakeFiles/Concurrency.dir/build.make CMakeFiles/Concurrency.dir/test/test_threads_manager.c.s
 .PHONY : test/test_threads_manager.c.s
 
-threads/generic_runner.o: threads/generic_runner.c.o
-
-.PHONY : threads/generic_runner.o
-
-# target to build an object file
-threads/generic_runner.c.o:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/generic_runner.c.o
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.o
-.PHONY : threads/generic_runner.c.o
-
-threads/generic_runner.i: threads/generic_runner.c.i
-
-.PHONY : threads/generic_runner.i
-
-# target to preprocess a source file
-threads/generic_runner.c.i:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/generic_runner.c.i
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.i
-.PHONY : threads/generic_runner.c.i
-
-threads/generic_runner.s: threads/generic_runner.c.s
-
-.PHONY : threads/generic_runner.s
-
-# target to generate assembly for a file
-threads/generic_runner.c.s:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/generic_runner.c.s
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_runner.c.s
-.PHONY : threads/generic_runner.c.s
-
-threads/generic_thread.o: threads/generic_thread.c.o
-
-.PHONY : threads/generic_thread.o
-
-# target to build an object file
-threads/generic_thread.c.o:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/generic_thread.c.o
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.o
-.PHONY : threads/generic_thread.c.o
-
-threads/generic_thread.i: threads/generic_thread.c.i
-
-.PHONY : threads/generic_thread.i
-
-# target to preprocess a source file
-threads/generic_thread.c.i:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/generic_thread.c.i
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.i
-.PHONY : threads/generic_thread.c.i
-
-threads/generic_thread.s: threads/generic_thread.c.s
-
-.PHONY : threads/generic_thread.s
-
-# target to generate assembly for a file
-threads/generic_thread.c.s:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/generic_thread.c.s
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_thread.c.s
-.PHONY : threads/generic_thread.c.s
-
-threads/generic_threads_manager.o: threads/generic_threads_manager.c.o
-
-.PHONY : threads/generic_threads_manager.o
-
-# target to build an object file
-threads/generic_threads_manager.c.o:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/generic_threads_manager.c.o
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.o
-.PHONY : threads/generic_threads_manager.c.o
-
-threads/generic_threads_manager.i: threads/generic_threads_manager.c.i
-
-.PHONY : threads/generic_threads_manager.i
-
-# target to preprocess a source file
-threads/generic_threads_manager.c.i:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/generic_threads_manager.c.i
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.i
-.PHONY : threads/generic_threads_manager.c.i
-
-threads/generic_threads_manager.s: threads/generic_threads_manager.c.s
-
-.PHONY : threads/generic_threads_manager.s
-
-# target to generate assembly for a file
-threads/generic_threads_manager.c.s:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/generic_threads_manager.c.s
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/generic_threads_manager.c.s
-.PHONY : threads/generic_threads_manager.c.s
-
-threads/thread_pool/task_queue.o: threads/thread_pool/task_queue.c.o
-
-.PHONY : threads/thread_pool/task_queue.o
-
-# target to build an object file
-threads/thread_pool/task_queue.c.o:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/thread_pool/task_queue.c.o
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.o
-.PHONY : threads/thread_pool/task_queue.c.o
-
-threads/thread_pool/task_queue.i: threads/thread_pool/task_queue.c.i
-
-.PHONY : threads/thread_pool/task_queue.i
-
-# target to preprocess a source file
-threads/thread_pool/task_queue.c.i:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/thread_pool/task_queue.c.i
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.i
-.PHONY : threads/thread_pool/task_queue.c.i
-
-threads/thread_pool/task_queue.s: threads/thread_pool/task_queue.c.s
-
-.PHONY : threads/thread_pool/task_queue.s
-
-# target to generate assembly for a file
-threads/thread_pool/task_queue.c.s:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/thread_pool/task_queue.c.s
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/task_queue.c.s
-.PHONY : threads/thread_pool/task_queue.c.s
-
-threads/thread_pool/thread_pool.o: threads/thread_pool/thread_pool.c.o
-
-.PHONY : threads/thread_pool/thread_pool.o
-
-# target to build an object file
-threads/thread_pool/thread_pool.c.o:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/thread_pool/thread_pool.c.o
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.o
-.PHONY : threads/thread_pool/thread_pool.c.o
-
-threads/thread_pool/thread_pool.i: threads/thread_pool/thread_pool.c.i
-
-.PHONY : threads/thread_pool/thread_pool.i
-
-# target to preprocess a source file
-threads/thread_pool/thread_pool.c.i:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/thread_pool/thread_pool.c.i
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.i
-.PHONY : threads/thread_pool/thread_pool.c.i
-
-threads/thread_pool/thread_pool.s: threads/thread_pool/thread_pool.c.s
-
-.PHONY : threads/thread_pool/thread_pool.s
-
-# target to generate assembly for a file
-threads/thread_pool/thread_pool.c.s:
-	$(MAKE) -f CMakeFiles/Concurrency_Lib.dir/build.make CMakeFiles/Concurrency_Lib.dir/threads/thread_pool/thread_pool.c.s
-	$(MAKE) -f CMakeFiles/Concurrency_Lib_Static.dir/build.make CMakeFiles/Concurrency_Lib_Static.dir/threads/thread_pool/thread_pool.c.s
-.PHONY : threads/thread_pool/thread_pool.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... install"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Concurrency_Lib"
 	@echo "... edit_cache"
-	@echo "... Install_Concurrency"
 	@echo "... Concurrency"
 	@echo "... Concurrency_Lib_Static"
-	@echo "... common/fifo_queue.o"
-	@echo "... common/fifo_queue.i"
-	@echo "... common/fifo_queue.s"
-	@echo "... common/time.o"
-	@echo "... common/time.i"
-	@echo "... common/time.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Concurrency_Lib"
+	@echo "... Collections"
+	@echo "... Collections_Lib_Static"
+	@echo "... Collections_Lib"
+	@echo "... Comparers"
+	@echo "... Comparers_Lib_Static"
+	@echo "... Comparers_Lib"
+	@echo "... src/common/fifo_queue.o"
+	@echo "... src/common/fifo_queue.i"
+	@echo "... src/common/fifo_queue.s"
+	@echo "... src/common/time.o"
+	@echo "... src/common/time.i"
+	@echo "... src/common/time.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/threads/generic_runner.o"
+	@echo "... src/threads/generic_runner.i"
+	@echo "... src/threads/generic_runner.s"
+	@echo "... src/threads/generic_thread.o"
+	@echo "... src/threads/generic_thread.i"
+	@echo "... src/threads/generic_thread.s"
+	@echo "... src/threads/generic_threads_manager.o"
+	@echo "... src/threads/generic_threads_manager.i"
+	@echo "... src/threads/generic_threads_manager.s"
+	@echo "... src/threads/thread_pool/task_queue.o"
+	@echo "... src/threads/thread_pool/task_queue.i"
+	@echo "... src/threads/thread_pool/task_queue.s"
+	@echo "... src/threads/thread_pool/thread_pool.o"
+	@echo "... src/threads/thread_pool/thread_pool.i"
+	@echo "... src/threads/thread_pool/thread_pool.s"
 	@echo "... test/test_fifo_queue.o"
 	@echo "... test/test_fifo_queue.i"
 	@echo "... test/test_fifo_queue.s"
@@ -588,21 +625,6 @@ help:
 	@echo "... test/test_threads_manager.o"
 	@echo "... test/test_threads_manager.i"
 	@echo "... test/test_threads_manager.s"
-	@echo "... threads/generic_runner.o"
-	@echo "... threads/generic_runner.i"
-	@echo "... threads/generic_runner.s"
-	@echo "... threads/generic_thread.o"
-	@echo "... threads/generic_thread.i"
-	@echo "... threads/generic_thread.s"
-	@echo "... threads/generic_threads_manager.o"
-	@echo "... threads/generic_threads_manager.i"
-	@echo "... threads/generic_threads_manager.s"
-	@echo "... threads/thread_pool/task_queue.o"
-	@echo "... threads/thread_pool/task_queue.i"
-	@echo "... threads/thread_pool/task_queue.s"
-	@echo "... threads/thread_pool/thread_pool.o"
-	@echo "... threads/thread_pool/thread_pool.i"
-	@echo "... threads/thread_pool/thread_pool.s"
 .PHONY : help
 
 

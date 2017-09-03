@@ -6,46 +6,74 @@
 
 #IncludeRegexTransform: 
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/common/allocator.h
-../../common/types.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/types.h
+../../collections/include/common/allocator.h
+types.h
+../../collections/include/common/types.h
 stdio.h
 -
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/array_helper.h
+../../common/include/array_helper.h
 stdio.h
 -
 types.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/types.h
-../comparers/comparer.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/comparer.h
+../../common/include/types.h
+comparer.h
+../../common/include/comparer.h
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/numbers.h
+../../common/include/numbers.h
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/types.h
+../../common/include/types.h
 stdio.h
 -
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/comparer.h
+../../comparers/include/comparer.h
 stdio.h
 -
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/common/fifo_queue.h
-../../collections/common/allocator.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/common/allocator.h
+../../unit_tests/include/common/terminal.h
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/common/time.h
+../../unit_tests/include/test/assertion.h
+comparer.h
+../../unit_tests/include/test/comparer.h
 
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/main.c
+../include/common/fifo_queue.h
+common/allocator.h
+../include/common/common/allocator.h
+
+../include/common/time.h
+
+../include/threads/generic_runner.h
+types.h
+../include/threads/types.h
+
+../include/threads/generic_threads_manager.h
 stdio.h
 -
-test/test_fifo_queue.h
+types.h
+../include/threads/types.h
+generic_runner.h
+../include/threads/generic_runner.h
+
+../include/threads/thread_pool/task_queue.h
+common/allocator.h
+../include/threads/thread_pool/common/allocator.h
+../generic_runner.h
+../include/threads/generic_runner.h
+
+../include/threads/thread_pool/thread_pool.h
+task_queue.h
+../include/threads/thread_pool/task_queue.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/main.c
+stdio.h
+-
+../test/test_fifo_queue.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test_fifo_queue.h
-test/test_task_queue.h
+../test/test_task_queue.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test_task_queue.h
-test/test_thread_pool.h
+../test/test_thread_pool.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test_thread_pool.h
-test/test_threads_manager.h
+../test/test_threads_manager.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test_threads_manager.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test_fifo_queue.c
@@ -55,12 +83,12 @@ stdio.h
 -
 string.h
 -
-../common/fifo_queue.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/common/fifo_queue.h
+common/fifo_queue.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/common/fifo_queue.h
 test_fifo_queue.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test_fifo_queue.h
-../../unit_tests/common/terminal.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/common/terminal.h
+common/terminal.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/common/terminal.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test_fifo_queue.h
 
@@ -73,14 +101,14 @@ stdio.h
 -
 test_task_queue.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test_task_queue.h
-../../concurrency/threads/thread_pool/task_queue.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/thread_pool/task_queue.h
-../../common/numbers.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/numbers.h
-../../unit_tests/test/assertion.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/test/assertion.h
-../../unit_tests/common/terminal.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/common/terminal.h
+threads/thread_pool/task_queue.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/threads/thread_pool/task_queue.h
+numbers.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/numbers.h
+test/assertion.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test/assertion.h
+common/terminal.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/common/terminal.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test_task_queue.h
 
@@ -95,14 +123,14 @@ pthread.h
 -
 test_thread_pool.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test_thread_pool.h
-../../concurrency/threads/thread_pool/thread_pool.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/thread_pool/thread_pool.h
-../../common/numbers.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/numbers.h
-../../unit_tests/test/assertion.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/test/assertion.h
-../../unit_tests/common/terminal.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/common/terminal.h
+threads/thread_pool/thread_pool.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/threads/thread_pool/thread_pool.h
+numbers.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/numbers.h
+test/assertion.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test/assertion.h
+common/terminal.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/common/terminal.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test_thread_pool.h
 
@@ -119,44 +147,16 @@ sys/time.h
 -
 test_threads_manager.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test_threads_manager.h
-../../concurrency/threads/generic_threads_manager.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/generic_threads_manager.h
-../../common/array_helper.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/array_helper.h
-../common/time.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/common/time.h
-../../unit_tests/test/assertion.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/test/assertion.h
-../../unit_tests/common/terminal.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/common/terminal.h
+threads/generic_threads_manager.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/threads/generic_threads_manager.h
+array_helper.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/array_helper.h
+common/time.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/common/time.h
+test/assertion.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test/assertion.h
+common/terminal.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/common/terminal.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/test/test_threads_manager.h
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/generic_runner.h
-../../common/types.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/types.h
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/generic_threads_manager.h
-stdio.h
--
-../../common/types.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/common/types.h
-generic_runner.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/generic_runner.h
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/thread_pool/task_queue.h
-../../../collections/common/allocator.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/common/allocator.h
-../generic_runner.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/generic_runner.h
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/thread_pool/thread_pool.h
-task_queue.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/threads/thread_pool/task_queue.h
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/common/terminal.h
-
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/test/assertion.h
-../../comparers/comparer.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/comparer.h
 

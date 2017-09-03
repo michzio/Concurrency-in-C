@@ -6,9 +6,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "../common/fifo_queue.h"
+#include "common/fifo_queue.h"
 #include "test_fifo_queue.h"
-#include "../../unit_tests/common/terminal.h"
+#include "common/terminal.h"
 
 static fifo_queue_t *fifo;
 

@@ -7,10 +7,10 @@
 #include <stdio.h>
 #include <pthread.h>
 #include "test_thread_pool.h"
-#include "../../concurrency/threads/thread_pool/thread_pool.h"
-#include "../../common/numbers.h"
-#include "../../unit_tests/test/assertion.h"
-#include "../../unit_tests/common/terminal.h"
+#include "threads/thread_pool/thread_pool.h"
+#include "numbers.h"
+#include "test/assertion.h"
+#include "common/terminal.h"
 
 #define DEFAULT_MIN_SIZE 8
 #define DEFAULT_MAX_SIZE 16

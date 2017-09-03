@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libconcurrency.a"
+  "../outputs/lib/apple/libconcurrency.a"
 )

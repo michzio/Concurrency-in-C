@@ -57,28 +57,28 @@ include CMakeFiles/Concurrency.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Concurrency.dir/flags.make
 
-CMakeFiles/Concurrency.dir/main.c.o: CMakeFiles/Concurrency.dir/flags.make
-CMakeFiles/Concurrency.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Concurrency.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency.dir/main.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/main.c
+CMakeFiles/Concurrency.dir/src/main.c.o: CMakeFiles/Concurrency.dir/flags.make
+CMakeFiles/Concurrency.dir/src/main.c.o: ../src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Concurrency.dir/src/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Concurrency.dir/src/main.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/main.c
 
-CMakeFiles/Concurrency.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/main.c > CMakeFiles/Concurrency.dir/main.c.i
+CMakeFiles/Concurrency.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Concurrency.dir/src/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/main.c > CMakeFiles/Concurrency.dir/src/main.c.i
 
-CMakeFiles/Concurrency.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/main.c -o CMakeFiles/Concurrency.dir/main.c.s
+CMakeFiles/Concurrency.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Concurrency.dir/src/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/src/main.c -o CMakeFiles/Concurrency.dir/src/main.c.s
 
-CMakeFiles/Concurrency.dir/main.c.o.requires:
+CMakeFiles/Concurrency.dir/src/main.c.o.requires:
 
-.PHONY : CMakeFiles/Concurrency.dir/main.c.o.requires
+.PHONY : CMakeFiles/Concurrency.dir/src/main.c.o.requires
 
-CMakeFiles/Concurrency.dir/main.c.o.provides: CMakeFiles/Concurrency.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/Concurrency.dir/build.make CMakeFiles/Concurrency.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/Concurrency.dir/main.c.o.provides
+CMakeFiles/Concurrency.dir/src/main.c.o.provides: CMakeFiles/Concurrency.dir/src/main.c.o.requires
+	$(MAKE) -f CMakeFiles/Concurrency.dir/build.make CMakeFiles/Concurrency.dir/src/main.c.o.provides.build
+.PHONY : CMakeFiles/Concurrency.dir/src/main.c.o.provides
 
-CMakeFiles/Concurrency.dir/main.c.o.provides.build: CMakeFiles/Concurrency.dir/main.c.o
+CMakeFiles/Concurrency.dir/src/main.c.o.provides.build: CMakeFiles/Concurrency.dir/src/main.c.o
 
 
 CMakeFiles/Concurrency.dir/test/test_fifo_queue.c.o: CMakeFiles/Concurrency.dir/flags.make
@@ -179,7 +179,7 @@ CMakeFiles/Concurrency.dir/test/test_threads_manager.c.o.provides.build: CMakeFi
 
 # Object files for target Concurrency
 Concurrency_OBJECTS = \
-"CMakeFiles/Concurrency.dir/main.c.o" \
+"CMakeFiles/Concurrency.dir/src/main.c.o" \
 "CMakeFiles/Concurrency.dir/test/test_fifo_queue.c.o" \
 "CMakeFiles/Concurrency.dir/test/test_task_queue.c.o" \
 "CMakeFiles/Concurrency.dir/test/test_thread_pool.c.o" \
@@ -188,27 +188,26 @@ Concurrency_OBJECTS = \
 # External object files for target Concurrency
 Concurrency_EXTERNAL_OBJECTS =
 
-concurrency: CMakeFiles/Concurrency.dir/main.c.o
-concurrency: CMakeFiles/Concurrency.dir/test/test_fifo_queue.c.o
-concurrency: CMakeFiles/Concurrency.dir/test/test_task_queue.c.o
-concurrency: CMakeFiles/Concurrency.dir/test/test_thread_pool.c.o
-concurrency: CMakeFiles/Concurrency.dir/test/test_threads_manager.c.o
-concurrency: CMakeFiles/Concurrency.dir/build.make
-concurrency: libconcurrency.a
-concurrency: ../../unit_tests/output/unix/lib/static/libunit_tests.a
-concurrency: ../../common/output/unix/lib/static/libcommon_functions.a
-concurrency: ../../collections/output/unix/lib/static/libcollections.a
-concurrency: ../../comparers/output/unix/lib/static/libcomparers.a
-concurrency: CMakeFiles/Concurrency.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable concurrency"
+../outputs/bin/apple/concurrency: CMakeFiles/Concurrency.dir/src/main.c.o
+../outputs/bin/apple/concurrency: CMakeFiles/Concurrency.dir/test/test_fifo_queue.c.o
+../outputs/bin/apple/concurrency: CMakeFiles/Concurrency.dir/test/test_task_queue.c.o
+../outputs/bin/apple/concurrency: CMakeFiles/Concurrency.dir/test/test_thread_pool.c.o
+../outputs/bin/apple/concurrency: CMakeFiles/Concurrency.dir/test/test_threads_manager.c.o
+../outputs/bin/apple/concurrency: CMakeFiles/Concurrency.dir/build.make
+../outputs/bin/apple/concurrency: ../outputs/lib/apple/libconcurrency.dylib
+../outputs/bin/apple/concurrency: ../../unit_tests/outputs/lib/apple/libunit_tests.dylib
+../outputs/bin/apple/concurrency: /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/lib/apple/libcollections.dylib
+../outputs/bin/apple/concurrency: /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/lib/apple/libcomparers.dylib
+../outputs/bin/apple/concurrency: CMakeFiles/Concurrency.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable ../outputs/bin/apple/concurrency"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Concurrency.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Concurrency.dir/build: concurrency
+CMakeFiles/Concurrency.dir/build: ../outputs/bin/apple/concurrency
 
 .PHONY : CMakeFiles/Concurrency.dir/build
 
-CMakeFiles/Concurrency.dir/requires: CMakeFiles/Concurrency.dir/main.c.o.requires
+CMakeFiles/Concurrency.dir/requires: CMakeFiles/Concurrency.dir/src/main.c.o.requires
 CMakeFiles/Concurrency.dir/requires: CMakeFiles/Concurrency.dir/test/test_fifo_queue.c.o.requires
 CMakeFiles/Concurrency.dir/requires: CMakeFiles/Concurrency.dir/test/test_task_queue.c.o.requires
 CMakeFiles/Concurrency.dir/requires: CMakeFiles/Concurrency.dir/test/test_thread_pool.c.o.requires
